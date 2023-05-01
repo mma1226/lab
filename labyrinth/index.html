@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+    <title>My Garden of Forking Path</title>
+
+    <link rel="stylesheet" href="/style.css" />  
+    <script src="./script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+  </head>
+
+  <body>
+    
+    <div class="wrapper">
+      
+      <div id="welcome" class="welcome">
+        <h1>For Posterity</h1>
+        <p>Welcome, visitor of my garden...</p>
+        <form id="userInput">
+          <label for="username">If you could kindly sign your name below <br><br></label>
+          <input type="text" name="username" id="username" /> 
+          <button type="submit">🖋</button>  
+        </form>
+      </div>
+
+      <div id="log" class="log hidden">
+        <h2><span id="usernameVal"></span></h2>
+        <p id="garden">you entered the <span id="hover-area">garden</span></p>
+        <p id="logText"></p>
+      </div>
+
+      <!-- this will be filled in by the javascript -->
+      <pre id="space" class="space hidden"></pre>
+      <div id="inventory" class="inventory hidden">
+        <p id="inventoryItems"></p>
+
+
+      
+        <p id="hover-area">
+          <div id="clock"></div><br>
+          <div id="date"></div>
+        </p>
+      </div>
+      
+      <div id="legend" class="legend hidden">
+        <!-- <h2>Legend</h2>
+        <p>( -- tool</p>
+        <p>* -- gem</p>
+        <p>? -- scroll</p>
+        <p>/ -- wand</p>
+        <p>! -- potion</p>
+        <p>+ -- spell book</p>
+        <p>= -- ring</p>
+        <p>&gt; -- stairs going down</p> -->
+     </div>
+
+      <div id="viewer" class="viewer hidden">
+        <p>You see here a <span id="item"></span>:</p>
+        <p>
+          <span class="symbol"></span> <b><span id="work"></span></b> <span class="symbol"></span>
+        </p>
+        
+      </div>
+      
+    </div> <!-- end wrapper -->
+    
+    <div class="links">
+      <nav>
+        <a href="/exit.html">Exit</a>
+        <span id="real"><a href="/guanyin/src/index.html">Exit</a></span>
+      </nav>
+    </div>
+    
+  </body>
+</html>
